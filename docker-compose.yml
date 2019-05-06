@@ -12,4 +12,6 @@ services:
     volumes:
       - ./notebook:/notebook
       - ./notebook/datasets:/notebook/datasets
+    env_file:
+      - .env
 
