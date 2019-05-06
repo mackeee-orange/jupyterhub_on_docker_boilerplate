@@ -1,0 +1,20 @@
+# for IDE of JetBrain
+.idea
+
+# jupyter
+.ipynb_checkpoints
+.env.jupyter
+
+# dotenv
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# mypy
+.mypy_cache
+
+# virtualenv
+venv
