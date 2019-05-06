@@ -1,0 +1,15 @@
+version: '2.3'
+
+services:
+  jupyterlab:
+    restart: always
+    build: .
+    user: "${UID}:${GID}"
+    runtime: nvidia
+    command: jupyter lab --ip=0.0.0.0 --no-browser --allow-root
+    ports:
+      - 8889:8888
+    volumes:
+      - ./notebook:/notebook
+      - ./notebook/datasets:/notebook/datasets
+
