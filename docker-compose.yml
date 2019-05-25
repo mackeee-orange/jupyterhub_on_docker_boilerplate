@@ -6,7 +6,7 @@ services:
     build: .
     user: "${UID}:${GID}"
     runtime: nvidia
-    command: jupyter lab --ip=0.0.0.0 --no-browser --allow-root
+    command: jupyter lab --ip=0.0.0.0 --no-browser
     ports:
       - 8889:8888
     volumes:
